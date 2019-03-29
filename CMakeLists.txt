@@ -22,6 +22,10 @@ include(${SWIG_USE_FILE})
 # nrf-ble-driver
 find_package(nrf-ble-driver CONFIG REQUIRED)
 
+# Python.h
+# find_package(PythonLibs REQUIRED)
+# include_directories(${PYTHON_INCLUDE_DIRS})
+
 message(STATUS "Found Python ${PYTHON_VERSION_STRING} in directory ${PYTHON_EXECUTABLE}")
 message(STATUS "Linking towards Python library ${PYTHON_LIBRARY}")
 

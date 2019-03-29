@@ -134,7 +134,8 @@ Install the required packages to build the bindings:
 Then change to the root folder of the repository and issue the following commands:
 
     $ cd build
-    > cmake -G "Unix Makefiles" <-DCMAKE_BUILD_TYPE=<build_type>> <-DARCH=<x86_32,x86_64>> <-DBOOST_LIBRARYDIR="<Boost libs path>>" ..
+    > cmake -G "Unix Makefiles" <-DCMAKE_BUILD_TYPE=<build_type>> <-DARCH=<x86_32,x86_64>> <-DBOOST_LIBRARYDIR="<Boost libs path>"> <-DPYTHON_LIBRARY="<Path of 'libpython*.*.so'>"> 
+    <-DPYTHON_INCLUDE="<Path of Python.h, e.g. /user/anaconda3/include>"> ..
     $ make
 
 **Note**: Optionally Select the build configuration with the `-DCMAKE_BUILD_TYPE` option. Typically `Debug`, `Release`, `MinSizeRel` and `RelWithDebInfo` are available.
