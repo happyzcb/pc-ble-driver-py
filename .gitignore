@@ -19,3 +19,5 @@ dist
 .tox
 _skbuild
 _cmake_test_compile
+
+build/
